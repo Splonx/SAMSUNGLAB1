@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="" class="formulario" id="formulario">
+            
+            <fieldset> 
+<h1> Create Account</h1>
+                <div class="formulario-grupo" id="grupo-nombre"></div>
+              <label for "Nombre"> Nombre: </label>
+              <div class="formulario-grupo-input">
+              <input type="text" name="Nombre" id="Nombre:" value="" maxlength="30" class="formulario-grupo"/> 
+              <span id="NombreError"></span>
+               </div>     
+                  </div>
+
+                  <div class="formulario-grupo" id="grupo-email"></div>
+              <label for "Email"> Email: </label>
+              <div class="formulario-grupo-input">
+              <input type="email" name="Email" id="Email:" value="" class="formulario-grupo"/> 
+              <span id="EmailError"></span>            
+            </div>     
+        </div>
+
+        <div class="formulario-grupo" id="grupo-clave"></div>
+              <label for "Clave"> Clave: </label>
+              <div class="formulario-grupo-input"></div>
+              <input type="password" id="Clave:" value="" maxlength="8"class="formulario-grupo"/> 
+              <span id="ClaveError"></span>
+            </div>   
+
+        </div>
+
+        <div class="formulario-grupo" id="grupo-confirmacion"></div>
+              <label for "Conifrmacion"> Confirma su clave: </label>
+              <div class="formulario-grupo-input"></div>
+              <input type="password" id="Conifrmacion:" value="" maxlength="8" class="formulario-grupo"/> 
+              <span id="ConfirmacionError"></span
+            </div>     
+        </div>
+
+             
+             <div class="formulario-grupo formulario-grupo-btn"> </div>
+
+             <button type="submit" id="button" class="formulario-grupo-btn" onclick="return validarNombre(), validarEmail(), validarClave(), validarConfirm(), validarFormulario()"> Enviar </button> 
+            
+        </fieldset>
+        </form>
+     <script src="index.js" type="text/javascript"> </script>
+    </body>
+</html>
